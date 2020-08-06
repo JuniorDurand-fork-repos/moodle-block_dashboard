@@ -1,7 +1,7 @@
 <div class="row">
   {{#courses}}
-    <div class="card">
-      <p>{{fullname}}</p>
-    </div>
+    {{< core_course/coursecard }}
+      {{$coursename}}{{{fulname}}}{{/coursename}}
+    {{/ core_course/coursecard }}
   {{/courses}}
 </div>
