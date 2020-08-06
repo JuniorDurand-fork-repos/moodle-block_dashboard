@@ -4,6 +4,7 @@ namespace block_dashboard\output;
 
 use stdClass;
 use plugin_renderer_base;
+use block_dashboard\extras\utils;
 
 /**
  * Dashboard block renderer
@@ -20,6 +21,7 @@ class renderer extends plugin_renderer_base {
      */
     public function export_for_template() {
         $templatecontext = new stdClass();
+        $templatecontext->courses = utils::get_courses();
 
         return $templatecontext;
     }
