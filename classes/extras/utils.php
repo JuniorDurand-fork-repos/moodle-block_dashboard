@@ -2,6 +2,8 @@
 
 namespace block_dashboard\extras;
 
+require_once("$CFG->dirroot/course/lib.php");
+
 /**
  * Useful functions class
  * 
